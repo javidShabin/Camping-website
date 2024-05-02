@@ -24,3 +24,58 @@
 body{
     font-family: "Montserrat", sans-serif;
 }
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+.nav-bar{
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--text-dark);
+}
+.logo a{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--white);
+}
+.menu-btn{
+    font-size: 1.5rem;
+    color: var(--white);
+    cursor: pointer;
+}
+.nav-links{
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    padding: 2.2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+    background-color: var(--text-dark);
+    transition: .5s;
+    z-index: -1;
+    transform: translateY(-100%);
+}
+.nav-links.open{
+    transform: translateY(0);
+}
+.nav-links a{
+    font-weight: 600;
+    color: var(--primary-color);
+}
+.nav-links a:hover{
+    color: var(--white);
+}
+.nav-buttons{
+    display: none;
+}
