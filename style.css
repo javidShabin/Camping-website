@@ -79,3 +79,49 @@ header{
 .nav-buttons{
     display: none;
 }
+
+@media (width > 768px) {
+    header{
+        position: static;
+        padding: 2rem 1rem;
+        max-width: var(--max-width);
+        margin-inline: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+    .nav-bar{
+        flex: 1;
+        padding: 0;
+        background-color: transparent;
+    }
+    .logo a{
+        color: var(--text-dark);
+    }
+    .menu-btn{
+        display: none;
+    }
+    .nav-links{
+        position: static;
+        padding: 0;
+        flex-direction: row;
+        background-color: transparent;
+        transform: none;
+    }
+    .nav-links a{
+        color: var(--text-dark);
+    }
+    .nav-buttons{
+        flex: 1;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+    .nav-buttons .btn{
+        font-size: 1.5rem;
+        color: var(--text-dark);
+        background-color: transparent;
+    }
+
+}
